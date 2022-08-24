@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<style>
+			div
+			{
+			height:300px;
+			width:350px;
+			background-color:yellow;
+			margin-left:200px;
+			margin-top:150px;
+			}
+			input
+			{
+				margin-left:40px;
+				margin-top:30px;
+				border-radius:20px;
+			}
+		</style>
+		<script>
+			function fun()
+			{
+				var x=document.getElementById("vr").value
+				document.getElementById("pv").style.backgroundColor=x
+			}
+			function fun1()
+			{
+				var x=document.getElementById("op").value
+				document.getElementById("jk").style.backgroundColor=x
+			}
+			function fun2()
+			{
+				var x=document.getElementById("hi").value
+				document.getElementById("raj").style.backgroundColor=x
+			}
+		</script>
+	</head>
+	<body>
+		<div id="pv">
+			<input id="vr" onkeypress="fun()"/>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<div id="jk">
+			<input id="op" onkeyup="fun1()"/>
+		</div>
+		<br/>
+		<br/>
+		<br/>
+		<div id="raj">
+			<input id="hi" onkeydown="fun2()"/>
+		</div>
+	</body>
+</html>
